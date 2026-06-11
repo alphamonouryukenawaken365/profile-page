@@ -14,29 +14,6 @@ body {
   color: #333;
 }
 
-header {
-  background-color: #1a1a2e;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-nav a {
-  color: #a0c4ff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: white;
-}
-
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -103,6 +80,45 @@ tr:nth-child(even) {
 
 footer {
   text-align: center;
+  padding: 2rem;
+  color: #888;
+  border-top: 1px solid #ddd;
+  margin-top: 2rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #a0c4ff;
+}
+
+.navigation a:hover {
+  color: white;
+}
+
+.goals-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem;
   color: #888;
   border-top: 1px solid #ddd;
