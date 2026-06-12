@@ -124,3 +124,28 @@ footer {
   border-top: 1px solid #ddd;
   margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+  .site-header { 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;}
+
+  .navigation { 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem; }
+
+  .goals-layout { 
+    flex-direction: column; }
+
+  body { 
+    font-size: 14px; }
+
+  footer { 
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; }
+}
