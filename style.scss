@@ -12,6 +12,25 @@ $border-radius: 20px;
 $font-size-sm: 14px;
 $font-size-base: 16px;
 
+// Mixins
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin section-divider {
+  margin-bottom: $spacing-md;
+  padding-bottom: $spacing-md;
+  border-bottom: 1px solid $border-color;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,9 +46,7 @@ body {
 }
 
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
   padding: $spacing-sm $spacing-md;
   background-color: $primary-color;
   color: white;
@@ -57,9 +74,7 @@ main {
 }
 
 section {
-  margin-bottom: $spacing-md;
-  padding-bottom: $spacing-md;
-  border-bottom: 1px solid $border-color;
+  @include section-divider;
 }
 
 h2 {
@@ -84,9 +99,7 @@ ul {
 }
 
 article {
-  margin-bottom: $spacing-md;
-  padding-bottom: $spacing-md;
-  border-bottom: 1px solid $border-color;
+  @include section-divider;
 
   p {
     margin-bottom: $spacing-sm;
@@ -115,9 +128,7 @@ table {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between;
   padding: $spacing-md;
   color: #888;
   border-top: 1px solid $border-color;
